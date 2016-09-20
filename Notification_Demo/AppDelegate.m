@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NotificatonViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,6 +20,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    NotificatonViewController *VC = [[NotificatonViewController alloc]init];
+    UINavigationController *navi  =[[UINavigationController alloc] initWithRootViewController:VC];
+    self.window.rootViewController = navi;
+    
     return YES;
 }
 
