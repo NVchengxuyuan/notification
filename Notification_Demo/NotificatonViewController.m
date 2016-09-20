@@ -22,6 +22,10 @@
     view.backgroundColor = [UIColor greenColor];
     [self.view addSubview:view];
     
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 300, 300, 30)];
+    label.backgroundColor = [UIColor redColor];
+    [self.view addSubview:label];
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(30, 100, 100, 30);
     btn.backgroundColor = [UIColor greenColor];
